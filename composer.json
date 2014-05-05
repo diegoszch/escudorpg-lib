@@ -1,0 +1,28 @@
+{
+    "name": "diegoszch/escudorpg-lib",
+	"type": "library",
+    "description": "Biblioteca de controle de sistemas de RPG (Descricao temporaria permanente)",
+	"homepage": "https://github.com/diegoszch/escudorpg-lib",
+    "authors": [
+        {
+            "name": "diegoszch",
+            "email": "diegoszch@gmail.com"
+        }
+    ],
+
+    "require": {
+		"php": ">=5.3.3"
+    },	    
+
+    "require-dev": {
+	"phpunit/phpunit": "4.2.*@dev"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Escudorpg\\": "src/"
+        }
+    },
+        
+    "minimum-stability": "dev"
+}
