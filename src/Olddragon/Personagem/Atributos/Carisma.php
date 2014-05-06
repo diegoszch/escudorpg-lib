@@ -11,7 +11,7 @@ use Escudorpg\Olddragon\Common\Atributos\Carisma as CommonCarisma;
  */
 class Carisma extends CommonCarisma
 {         
-    private $listNumeroMaximoSeguidores = array(
+    private $list_numero_maximo_seguidores = array(
         1 => 0,
         2 => 0,
         3 => 0,
@@ -43,7 +43,7 @@ class Carisma extends CommonCarisma
         29 => 10,        
     );
     
-    private $listAjusteReacao = array(    
+    private $list_ajuste_reacao = array(    
         1 => -25,
         2 => -20,
         3 => -20,
@@ -75,7 +75,7 @@ class Carisma extends CommonCarisma
         29 => 45,        
     ); 
     
-    private $listMortosVivosAfastados = array(    
+    private $list_mortos_vivos_afastados = array(    
         1 => 0,
         2 => 0,
         3 => 0,
@@ -119,7 +119,7 @@ class Carisma extends CommonCarisma
             return null;
         }
 
-        return $this->listNumeroMaximoSeguidores[$this->get()];
+        return $this->list_numero_maximo_seguidores[$this->get()];
     }
     
     /**
@@ -133,7 +133,7 @@ class Carisma extends CommonCarisma
             return null;
         }
 
-        return $this->listAjusteReacao[$this->get()];
+        return $this->list_ajuste_reacao[$this->get()];
     }
     
     /**
@@ -147,7 +147,7 @@ class Carisma extends CommonCarisma
             return null;
         }
 
-        return $this->listMortosVivosAfastados[$this->get()];
+        return $this->list_mortos_vivos_afastados[$this->get()];
     }
 
 }

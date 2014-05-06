@@ -11,7 +11,7 @@ use  Escudorpg\Olddragon\Common\Atributos\Forca as CommonForca;
  */
 class Forca extends CommonForca
 {     
-    private $listAtaque = array(
+    private $list_ataque = array(
         1 => -5,
         2 => -4,
         3 => -4,
@@ -54,6 +54,6 @@ class Forca extends CommonForca
             return null;
         }
         
-        return $this->listAtaque[$this->get()];                
+        return $this->list_ataque[$this->get()];                
     }
 }

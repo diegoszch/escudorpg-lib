@@ -11,7 +11,7 @@ use Escudorpg\Olddragon\Common\Atributos\Inteligencia as CommonInteligencia;
  */
 class Inteligencia extends CommonInteligencia
 {            
-    private $listIdiomaAdicional = array(
+    private $list_idioma_adicional = array(
         1 => 0,
         2 => 0,
         3 => 0,
@@ -43,7 +43,7 @@ class Inteligencia extends CommonInteligencia
         29 => 8,         
     );
     
-    private $listChanceAprenderMagia = array(
+    private $list_chance_aprender_magia = array(
         1 => 0,
         2 => 0,
         3 => 0,
@@ -79,7 +79,7 @@ class Inteligencia extends CommonInteligencia
      * Magias arcanas adicionais (Desenvolver)
      * @var type 
      */
-    private $listMagiasArcanas = array(
+    private $list_magias_arcanas = array(
         
     );
     
@@ -94,7 +94,7 @@ class Inteligencia extends CommonInteligencia
             return null;
         }
         
-        return $this->listIdiomaAdicional[$this->get()];
+        return $this->list_idioma_adicional[$this->get()];
     }
     
     /**
@@ -108,7 +108,7 @@ class Inteligencia extends CommonInteligencia
             return null;
         }
         
-        return $this->listChanceAprenderMagia[$this->get()];
+        return $this->list_chance_aprender_magia[$this->get()];
     }
     
     /**

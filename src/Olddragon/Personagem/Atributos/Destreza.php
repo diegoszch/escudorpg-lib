@@ -11,7 +11,7 @@ use Escudorpg\Olddragon\Common\Atributos\Destreza as CommonDestreza;
  */
 class Destreza extends CommonDestreza
 {     
-    private $listAjusteAtaSurDefPro = array(
+    private $list_ajuste_ata_sur_def_pro = array(
         1 => -5,
         2 => -4,
         3 => -4,
@@ -43,7 +43,7 @@ class Destreza extends CommonDestreza
         29 => 9,        
     );    
     
-    private $listLocDesArmadilhas = array(
+    private $list_loc_des_armadilhas = array(
         1 => -25,
         2 => -20,
         3 => -20,
@@ -75,7 +75,7 @@ class Destreza extends CommonDestreza
         29 => 35,        
     ); 
 
-    private $listMovSilAbrFechaduras = array(
+    private $list_mov_sil_abr_fechaduras = array(
         1 => -25,
         2 => -20,
         3 => -20,
@@ -107,7 +107,7 @@ class Destreza extends CommonDestreza
         29 => 45,        
     ); 
     
-    private $listEscSobPungar = array(
+    private $list_esc_sob_pungar = array(
         1 => -25,
         2 => -20,
         3 => -20,
@@ -150,7 +150,7 @@ class Destreza extends CommonDestreza
             return null;
         }
         
-        return $this->listAjusteAtaSurDefPro[$this->get()];
+        return $this->list_ajuste_ata_sur_def_pro[$this->get()];
     }
     
     /**
@@ -164,7 +164,7 @@ class Destreza extends CommonDestreza
             return null;
         }
         
-        return $this->listLocDesArmadilhas[$this->get()];
+        return $this->list_loc_des_armadilhas[$this->get()];
     }
     
     /**
@@ -178,7 +178,7 @@ class Destreza extends CommonDestreza
             return null;
         }
         
-        return $this->listMovSilAbrFechaduras[$this->get()];
+        return $this->list_mov_sil_abr_fechaduras[$this->get()];
     }
     
     public function getEscSobPungar()
@@ -188,6 +188,6 @@ class Destreza extends CommonDestreza
             return null;
         }
 
-        return $this->listEscSobPungar[$this->get()];        
+        return $this->list_esc_sob_pungar[$this->get()];        
     }
 }

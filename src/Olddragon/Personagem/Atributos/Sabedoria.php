@@ -11,7 +11,7 @@ use Escudorpg\Olddragon\Common\Atributos\Sabedoria as CommonSabedoria;
  */
 class Sabedoria extends CommonSabedoria
 {     
-    private $listAjusteProtecao = array(
+    private $list_ajuste_protecao = array(
         1 => -5,
         2 => -4,
         3 => -4,
@@ -54,6 +54,6 @@ class Sabedoria extends CommonSabedoria
             return null;
         }
 
-        return $this->listAjusteProtecao[$this->get()];
+        return $this->list_ajuste_protecao[$this->get()];
     }
 }

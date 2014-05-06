@@ -11,7 +11,7 @@ use Escudorpg\Olddragon\Common\Atributos\Constituicao as CommonConstituicao;
  */
 class Constituicao extends CommonConstituicao
 {     
-    private $listAjustePontosDeVidaProtecao = array(
+    private $list_ajuste_pontos_vida_protecao = array(
         1 => -5,
         2 => -4,
         3 => -4,
@@ -43,7 +43,7 @@ class Constituicao extends CommonConstituicao
         29 => 9,        
     );
     
-    private $listChanceRessurreicao = array(
+    private $list_chance_ressurreicao = array(
         1 => 0,
         2 => 0,
         3 => 0,
@@ -87,7 +87,7 @@ class Constituicao extends CommonConstituicao
             return null;
         }
 
-        return $this->listAjustePontosDeVidaProtecao[$this->get()];
+        return $this->list_ajuste_pontos_vida_protecao[$this->get()];
     }
     
     /**
@@ -101,6 +101,6 @@ class Constituicao extends CommonConstituicao
             return null;
         }
 
-        return $this->listChanceRessurreicao[$this->get()];
+        return $this->list_chance_ressurreicao[$this->get()];
     }
 }
